@@ -1,6 +1,10 @@
+/*
+    Program to find the occurrences of word in a given string
+ */
+
 public class CountWordInAString {
 
-    public static int countOcurrencesOfAWordInStringUsingForLoop(String str, String word)
+    public static int countOccurrencesOfAWordInStringUsingForLoop(String str, String word)
     {
         int count = 0;
         for (int i = 0; i < str.length(); i++)
@@ -12,7 +16,7 @@ public class CountWordInAString {
         return count;
     }
 
-    public static int countOcurrencesOfAWordInStringUsingWhileLoop(String str, String word)
+    public static int countOccurrencesOfAWordInStringUsingWhileLoop(String str, String word)
     {
         int count = 0;
         int pos = 0;
@@ -26,8 +30,8 @@ public class CountWordInAString {
 
     public static void main(String[] args)
     {
-        System.out.println("Result Using For Loop : "+ countOcurrencesOfAWordInStringUsingForLoop("SandeshSan", "San"));
+        System.out.println("Result Using For Loop : "+ countOccurrencesOfAWordInStringUsingForLoop("SandeshSan", "San"));
 
-        System.out.println("Result Using While Loop : "+ countOcurrencesOfAWordInStringUsingWhileLoop("SandeshSan", "San"));
+        System.out.println("Result Using While Loop : "+ countOccurrencesOfAWordInStringUsingWhileLoop("SandeshSan", "San"));
     }
 }
